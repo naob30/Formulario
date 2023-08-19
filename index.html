@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha de Matrícula - Reforço Escolar</title>
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:wght@200&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="imgFundo"></div>
+
+    <header class="content">
+
+        <div class="logo">
+            <img src="/assets/img/crianca-no-lapis.png" alt="">
+        </div>
+
+        <div class="titulo">
+            <div class="imgReforco">
+                <img src="/assets/img/Reforco-Escolar.png" alt="">
+            </div>
+            <h2>FICHA DE MATRÍCULA</h2>
+        </div>
+
+    </header>
+
+    <section class="content">
+        <div class="forms">
+            <div class="tituloAluno">
+                <h2>DADOS DO ALUNO</h2>
+            </div>
+            <div class="aluno">
+                <div class="formsAluno">
+                    <form action="listas.html" method="POST" enctype="multipart/form-data">
+                        <label>
+                            Nome completo:
+                            <input class="nome-completo height" type="text" name="name" required minlength="3">
+                        </label> <br>
+
+                        <label>
+                            CPF do aluno:
+                            <input class="cpf height" type="text" name="name" required minlength="10" maxlength="14">
+
+                            Data de Nascimento:
+                            <input class="height" type="date" />
+
+                            Deficiência:
+                            <select class="deficiencia height" name="tipo" required>
+                                <option></option>
+                                <option>Físico</option>
+                                <option>Físico/Paralisia Cerebral</option>
+                                <option>Intelectual</option>
+                                <option>Múltipla</option>
+                                <option>Paralisia Cerebral</option>
+                                <option>Síndrome de Down</option>
+                                <option>Surdez</option>
+                                <option>TEA</option>
+                                <option>Visual</option>
+                                <option>Avaliação Pedagógica</option>
+                            </select>
+
+                        </label> <br>
+
+                        <label>
+                            Nome da Mãe:
+                            <input class=" nome-mae height" type="text" name="name" required minlength="3">
+
+                            CPF:
+                            <input class="cpf height" type="text" name="name" required minlength="10" maxlength="14">
+                        </label> <br>
+
+                        <label>
+                            Nome do Pai:
+                            <input class=" nome-pai height" type="text" name="name" required minlength="3">
+
+                            CPF:
+                            <input class="cpf height" type="text" name="name" required minlength="10" maxlength="14">
+                        </label> <br>
+
+                        <label>
+                            Endereço completo:
+                            <input class="end-completo height" type="text" name="name" required minlength="3">
+
+                            Whatsapp:
+                            <input class="height" type="text" name="tel" maxlength="15"
+                                OnKeyPress="formatar('(##) ####-#####',this)" required>
+                        </label> <br>
+
+                        <label>
+                            Escola:
+                            <select class="height" name="tipo" required>
+                                <option></option>
+                                <option>E.M. Dr. Francisco Morato</option>
+                                <option>E.M. Dr. Ulisses Silveira Guimarães</option>
+                                <option>E.M. Prof. Lairce dos Santos Lupianha</option>
+                                <option>E.M. Fanny Goldberg</option>
+                                <option>E.M. Tatiana Belinky</option>
+                                <option>MATERNAL - E.M. Tatiana Belinky</option>
+                            </select>
+
+                            R.A.:
+                            <input class="ra height" type="text" name="name" required maxlength="11">
+
+                            Série/Ano:
+                            <input class="height" type="text" name="name" required>
+
+                            Período:
+                            <select class="height" name="tipo" required>
+                                <option></option>
+                                <option>Manhã</option>
+                                <option>Tarde</option>
+                                <option>Integral</option>
+                            </select>
+
+                        </label> <br>
+
+                        <input class="bt-enviar" type="submit" name="enviar">
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        Copyright © 2023 Nayara Brabo
+    </footer>
+</body>
+
+</html>
